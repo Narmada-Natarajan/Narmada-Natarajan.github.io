@@ -1,3 +1,3 @@
-## Created by Narmada Praveen
+## Created by Narmada Natarajan
 
 # Version - 1.0.0
