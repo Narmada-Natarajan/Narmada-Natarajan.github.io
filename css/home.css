@@ -7,7 +7,7 @@
 
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Times New Roman', Times, serif;
   background-color: #e0f7fa;
   color: #333;
 }
@@ -19,6 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav h1 {
@@ -48,7 +49,24 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Welcome Section */
+/* Hamburger Btn */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Welcome Sec*/
 .welcome {
   text-align: center;
   padding: 50px 20px;
@@ -59,10 +77,10 @@ nav ul li a:hover {
 
 .welcome span {
   color: #5e60ce; 
-  font-family: 'Comic Sans MS', cursive;
+  font-family:'Times New Roman', Times, serif
 }
 
-/* Events Section */
+/* Events Sec*/
 .events {
   max-width: 1000px;
   margin: auto;
@@ -147,24 +165,37 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* Footer */
-footer {
-  background: #e0f7fa;
-  padding: 20px;
-  text-align: center;
-  border-top: 3px solid #6c5ce7;
-  font-size: 0.9rem;
-  color: #4a6fa5;
-}
+
 
 /* Responsive Design */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
   .welcome {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding: 30px 15px;
   }
   .events h2 {
     font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(90deg, #6c5ce7, #00cec9);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul.showing {
+    max-height: 500px;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  nav h2 {
+    display: none;
   }
 }
 
@@ -174,12 +205,8 @@ footer {
   }
   .event-card {
     padding: 15px;
-    flex-basis: 20%;
   }
   .photos img {
     height: 150px;
-    flex-basis: 10%;
   }
 }
-
-
