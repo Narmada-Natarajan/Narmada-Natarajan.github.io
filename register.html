@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">FYI CLUB</div>
+
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html" class="active">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="register-container">
+
+        <h1>EVENT REGISTRATION</h1>
+
+        <!-- Individual Event -->
+        <section class="form-section">
+            <center><h2>Individual Event Participation</h2></center>
+            <form id="individualForm">
+                <label>Full Name</label>
+                <input type="text" required>
+
+                <label>Registration Number</label>
+                <input type="text" required>
+
+                <label>Email ID</label>
+                <input type="email" required>
+
+                <label>Phone Number</label>
+                <input type="tel"required>
+
+                <div class="qr-section">
+                    <p>Scan the QR Code to make payment</p>
+                    <div class="qr-placeholder">QR Code Here</div>
+                </div>
+
+                <label>Upload Payment Proof (Max 1MB)</label>
+                <input type="file" accept="image/*" required>
+                <center>
+                    <button type="submit">Register</button>
+                </center>
+            </form>
+        </section>
+
+        <!-- Group Event -->
+        <section class="form-section">
+            <center><h2>Group Event Participation</h2></center>
+
+            <form id="groupForm">
+                <label>Team Leader Name</label>
+                <input type="text" required>
+
+                <label>Registration Number</label>
+                <input type="text" required>
+
+                <label>Email ID</label>
+                <input type="email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" required>
+
+                <div id="membersContainer"></div>
+                <button type="button" id="addMemberBtn">➕ Add Member</button>
+
+                <div class="qr-section">
+                    <p>Scan the QR Code to make payment</p>
+                    <div class="qr-placeholder">QR Code Here</div>
+                </div>
+
+                <label>Upload Payment Proof (Max 1MB)</label>
+                <input type="file" accept="image/*" required>
+
+                <center>
+                    <button type="submit">Register</button>
+                </center>
+            </form>
+        </section>
+    </div>
