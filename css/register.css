@@ -148,7 +148,7 @@ button {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 962px) {
     nav ul {
         position: absolute;
         top: 60px;
