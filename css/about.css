@@ -123,12 +123,10 @@ body {
 .about-container strong {
   color: #5e60ce;
 }
-
 .about-container em {
   color: #216a69;
   font-style: italic;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -139,12 +137,10 @@ body {
     transform: translateY(0);
   }
 }
-
 @media (max-width: 962px) {
   .menu-btn {
     display: flex;
   }
-
   .nav-links {
     display: none;
     flex-direction: column;
@@ -153,11 +149,10 @@ body {
     top: 60px;
     right: 20px;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     gap: 15px;
   }
-
   #menu-toggle:checked + .menu-btn + nav .nav-links {
     display: flex;
   }

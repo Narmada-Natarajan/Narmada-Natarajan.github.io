@@ -8,14 +8,16 @@
 </head>
 <body>
     
+    <header>
     <nav>
         <div class="logo">FYI CLUB</div>
 
-        <div class="menu-btn" id="menu-btn">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </label>
 
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -24,15 +26,14 @@
             <li><a href="register.html" class="active">Register</a></li>
         </ul>
     </nav>
+    </header>
 
     <div class="register-container">
 
         <h1>EVENT REGISTRATION</h1>
-
-        <!-- Individual Event -->
         <section class="form-section">
             <center><h2>Individual Event Participation</h2></center>
-            <form id="individualForm">
+            <form>
                 <label>Full Name</label>
                 <input type="text" required>
 
@@ -43,7 +44,7 @@
                 <input type="email" required>
 
                 <label>Phone Number</label>
-                <input type="tel"required>
+                <input type="tel" required>
 
                 <div class="qr-section">
                     <p>Scan the QR Code to make payment</p>
@@ -58,11 +59,9 @@
             </form>
         </section>
 
-        <!-- Group Event -->
         <section class="form-section">
             <center><h2>Group Event Participation</h2></center>
-
-            <form id="groupForm">
+            <form>
                 <label>Team Leader Name</label>
                 <input type="text" required>
 
@@ -76,7 +75,7 @@
                 <input type="tel" required>
 
                 <div id="membersContainer"></div>
-                <button type="button" id="addMemberBtn">➕ Add Member</button>
+                <button type="button">➕ Add Member</button>
 
                 <div class="qr-section">
                     <p>Scan the QR Code to make payment</p>
@@ -92,3 +91,6 @@
             </form>
         </section>
     </div>
+
+</body>
+</html>
