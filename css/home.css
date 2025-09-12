@@ -44,6 +44,10 @@ nav h2 {
   transition: 0.3s;
   
 }
+.nav-links li a.active {
+  border-bottom: 2px solid white;
+  
+}
 
 .nav-links li a:hover {
   text-decoration: underline;
@@ -92,7 +96,7 @@ nav h2 {
 
 .welcome span {
   color: #5e60ce;
-  font-family: 'Times New Roman', Times, serif
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .events {
