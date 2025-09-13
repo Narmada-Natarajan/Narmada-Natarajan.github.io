@@ -96,12 +96,11 @@ nav ul li a:hover {
   border: 1px solid #00c6ff;
 }
 
-.contact-card h3 {
-  background: linear-gradient(to right, #6bb0c3);
+.contact-card h2 {
+  background: linear-gradient(to right, #88c7d8);
   color: #ffffff;
-  font-size: 1.35rem;
   text-align: center;
-  padding: 5px 0;
+  padding: 1px 0;
 }
 
 .contact-card a {
@@ -129,6 +128,7 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     gap: 10px; 
+    font-size:1rem;
     text-align: left;
     z-index: 1000;
   }
